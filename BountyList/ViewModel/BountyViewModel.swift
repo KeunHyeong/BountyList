@@ -14,7 +14,7 @@ class BountyViewModel{
         BountyInfo(name: "brook", bounty: 33000000),
         BountyInfo(name: "chopper", bounty: 50),
         BountyInfo(name: "franky", bounty: 44000000),
-        BountyInfo(name: "luffy", bounty: 30000000),
+        BountyInfo(name: "luffy", bounty: 3000000000),
         BountyInfo(name: "nami", bounty: 16000000),
         BountyInfo(name: "robin", bounty: 8000000),
         BountyInfo(name: "sanji", bounty: 77000000),
