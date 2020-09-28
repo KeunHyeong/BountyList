@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		18F443B825218F98002211BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443B725218F98002211BF /* AppDelegate.swift */; };
 		18F443BA25218F98002211BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443B925218F98002211BF /* SceneDelegate.swift */; };
-		18F443BC25218F98002211BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443BB25218F98002211BF /* ViewController.swift */; };
 		18F443BF25218F98002211BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F443BD25218F98002211BF /* Main.storyboard */; };
 		18F443C125218F9E002211BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F443C025218F9E002211BF /* Assets.xcassets */; };
 		18F443C425218F9E002211BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F443C225218F9E002211BF /* LaunchScreen.storyboard */; };
+		18F443CC252190F7002211BF /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443CB252190F7002211BF /* BountyViewController.swift */; };
+		18F443CF2521A871002211BF /* BountyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443CD2521A871002211BF /* BountyCell.swift */; };
+		18F443D02521A871002211BF /* BountyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F443CE2521A871002211BF /* BountyCell.xib */; };
+		18F443D22521AF14002211BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443D12521AF14002211BF /* DetailViewController.swift */; };
+		18F443D42521DAD0002211BF /* BountyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443D32521DAD0002211BF /* BountyInfo.swift */; };
+		18F443D82521E862002211BF /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443D72521E862002211BF /* DetailViewModel.swift */; };
+		18F443DA2521E881002211BF /* BountyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F443D92521E881002211BF /* BountyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18F443B425218F98002211BF /* BountyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F443B725218F98002211BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18F443B925218F98002211BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18F443BB25218F98002211BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18F443BE25218F98002211BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18F443C025218F9E002211BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F443C325218F9E002211BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F443C525218F9E002211BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F443CB252190F7002211BF /* BountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
+		18F443CD2521A871002211BF /* BountyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyCell.swift; sourceTree = "<group>"; };
+		18F443CE2521A871002211BF /* BountyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BountyCell.xib; sourceTree = "<group>"; };
+		18F443D12521AF14002211BF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		18F443D32521DAD0002211BF /* BountyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyInfo.swift; sourceTree = "<group>"; };
+		18F443D72521E862002211BF /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		18F443D92521E881002211BF /* BountyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,37 @@
 		18F443B625218F98002211BF /* BountyList */ = {
 			isa = PBXGroup;
 			children = (
+				18F443D62521E84B002211BF /* Model */,
+				18F443D52521E848002211BF /* ViewModel */,
 				18F443B725218F98002211BF /* AppDelegate.swift */,
 				18F443B925218F98002211BF /* SceneDelegate.swift */,
-				18F443BB25218F98002211BF /* ViewController.swift */,
+				18F443CB252190F7002211BF /* BountyViewController.swift */,
+				18F443D12521AF14002211BF /* DetailViewController.swift */,
 				18F443BD25218F98002211BF /* Main.storyboard */,
 				18F443C025218F9E002211BF /* Assets.xcassets */,
 				18F443C225218F9E002211BF /* LaunchScreen.storyboard */,
 				18F443C525218F9E002211BF /* Info.plist */,
+				18F443CD2521A871002211BF /* BountyCell.swift */,
+				18F443CE2521A871002211BF /* BountyCell.xib */,
 			);
 			path = BountyList;
+			sourceTree = "<group>";
+		};
+		18F443D52521E848002211BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18F443D72521E862002211BF /* DetailViewModel.swift */,
+				18F443D92521E881002211BF /* BountyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18F443D62521E84B002211BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18F443D32521DAD0002211BF /* BountyInfo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F443D02521A871002211BF /* BountyCell.xib in Resources */,
 				18F443C425218F9E002211BF /* LaunchScreen.storyboard in Resources */,
 				18F443C125218F9E002211BF /* Assets.xcassets in Resources */,
 				18F443BF25218F98002211BF /* Main.storyboard in Resources */,
@@ -138,8 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18F443BC25218F98002211BF /* ViewController.swift in Sources */,
+				18F443CF2521A871002211BF /* BountyCell.swift in Sources */,
 				18F443B825218F98002211BF /* AppDelegate.swift in Sources */,
+				18F443D82521E862002211BF /* DetailViewModel.swift in Sources */,
+				18F443D22521AF14002211BF /* DetailViewController.swift in Sources */,
+				18F443CC252190F7002211BF /* BountyViewController.swift in Sources */,
+				18F443DA2521E881002211BF /* BountyViewModel.swift in Sources */,
+				18F443D42521DAD0002211BF /* BountyInfo.swift in Sources */,
 				18F443BA25218F98002211BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
